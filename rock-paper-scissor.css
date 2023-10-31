@@ -1,0 +1,59 @@
+body {
+  background-color: black;
+  background-size: cover;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.result {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+img {
+  width: 50px;
+}
+
+.move-icon-button {
+  background-color: transparent;
+  border: 2px solid white;
+  cursor: pointer;
+  margin-right: 15px;
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 100%;
+}
+.move-icon-button:hover {
+  transform: scale(0.9);
+}
+
+.score {
+  margin-top: 30px;
+}
+
+.reset-button,
+.auto-play-button {
+  background-color: white;
+  padding: 8px 15px;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  border-style: dotted;
+}
+
+.reset-button:hover,
+.auto-play-button:hover {
+  background-color: red;
+}
+
+.reset-button:active,
+.auto-play-button:active {
+  transform: translateY(2px);
+}

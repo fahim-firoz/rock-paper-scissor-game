@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="rock-paper-scissor.css" />
+  </head>
+  <body>
+    <p class="title">Rock Paper Scissors</p>
+    <button
+      class="move-icon-button"
+      onclick="
+      playGame('rock');
+    "
+    >
+      <img src="images/rock-emoji.png" />
+    </button>
+    <button
+      class="move-icon-button"
+      onclick="
+      playGame('paper');
+    "
+    >
+      <img src="images/paper-emoji.png" />
+    </button>
+    <button
+      class="move-icon-button"
+      onclick="
+      playGame('scissors');
+
+    "
+    >
+      <img src="images/scissors-emoji.png" />
+    </button>
+
+    <p class="js-result result"></p>
+    <p class="js-moves"></p>
+    <p class="js-score score"></p>
+    <button
+      class="reset-button"
+      onclick="
+     score.wins = 0;
+     score.losses = 0;
+     score.ties = 0;
+     updateScoreElement();
+     localStorage.removeItem('score');
+    "
+    >
+      Reset score
+    </button>
+    <button
+      class="auto-play-button js-auto-play-button"
+      onclick="
+    autoPlay();
+    "
+    >
+      Auto play
+    </button>
+    <script src="rock-paper-scissors.js"></script>
+  </body>
+</html>
+<!-- In javascript 
+     falsy values:-
+        0, '', NaN, undefined, null
+      Any value not on this list is truthy
+-->
